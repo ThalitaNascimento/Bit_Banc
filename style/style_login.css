@@ -1,0 +1,40 @@
+
+
+    #centro {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+    }
+
+    #centro2 {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+    }
+
+    
+    
+
+
+.user 
+{
+    width: 10 0px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+h2
+{
+  margin: 25px;
+  padding: 0 0 20px;
+  color: #efed40;
+  text-align: center;
+}

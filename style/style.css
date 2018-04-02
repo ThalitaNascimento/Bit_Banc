@@ -1,0 +1,31 @@
+.logo{
+}
+
+/*----->ONDE IIIA SER O SLIDE<-----*/
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+
+/*-----> arrow direita1 <-----*/
+#img1 img{
+  margin-top: 20px;
+  margin-left: -350px;
+}
+
+/*-----> CARDS <-----*/
+
