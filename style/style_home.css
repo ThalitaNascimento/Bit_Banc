@@ -1,0 +1,31 @@
+#perfil img{
+	margin: 0 auto ;
+	height: 130px;
+	width: 140px;		
+	border-radius: 50%;
+	margin-top: 10px;
+}
+#icones i{
+	float: left;
+	margin-left: -10px;
+}
+#icones p{
+	margin-left: 30px;
+	font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#icone_sair{
+	margin-top: 145px;
+}
+#icone_sair i{
+	float: left;
+	margin-left: -10px;
+}
+#icone_sair p{
+	margin-left: 30px;
+	font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+	
