@@ -1,29 +1,4 @@
-
-
-    #centro {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        width: 500px;
-    }
-
-    #centro2 {
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 500px;
-        text-align: center;
-    }
-
-    
-    
-
-
-.user 
-{
+.user {
     width: 10 0px;
     height: 100px;
     border-radius: 50%;
@@ -32,13 +7,38 @@
     top: calc(-100px/2);
     left: calc(50% - 50px);
 }
-h2
-{
-  margin: 25px;
-  padding: 0 0 20px;
-  color: #efed40;
-  text-align: center;
+
+h2 {
+    margin: 25px;
+    padding: 0 0 20px;
+    color: #efed40;
+    text-align: center;
 }
-#home i{
+
+#home i {
     margin-top: -8px;
+}
+
+/* venancio esteve aqui */
+
+.ui.container.segment {
+    margin-top: 10%;
+}
+
+#menuMobile {
+    visibility: hidden;
+}
+
+/* responsividade dos menus */
+
+@media only screen and (max-width: 700px) {
+    #menuDesktop {
+        display: none;
+    }
+    .ui.container.segment {
+        margin-top: 30%;
+    }
+    #menuMobile {
+        visibility: visible;
+    }
 }

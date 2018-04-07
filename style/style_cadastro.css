@@ -1,16 +1,4 @@
-
-
-    #centro {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        width: 1000px;
-    }
-   
-.user 
-{
+.user {
     width: 10 0px;
     height: 100px;
     border-radius: 50%;
@@ -20,6 +8,29 @@
     left: calc(50% - 50px);
 }
 
-#home i{
-    margin-top: -8px; 
+#home i {
+    margin-top: -8px;
+}
+/* venancio esteve aqui */
+.ui.container.segment {
+    margin-top: 7%;
+}
+
+/* responsividade dos menus */
+
+#menuMobile {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+    #menuDesktop {
+        display: none;
+    }
+    #form {
+        margin-top: 25%;
+    }
+    #menuMobile {
+        visibility: visible;
+        margin-bottom: 10%;
+    }
 }
