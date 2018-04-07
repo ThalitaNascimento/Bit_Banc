@@ -5,83 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LOGIN</title>
-        <link rel="stylesheet" type="text/css" href="style/style_cadastro.css">
-
+    <link rel="stylesheet" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="style/style_cadastro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/icon.min.css">
 
-    <link rel="stylesheet" href="semantic/semantic.min.css">
 
-    <style type="text/css">
-        body {
-      background-image: url(img/bg.jpg);
-    }
-    </style>
+    <title>Document</title>
 </head>
+<style type="text/css">
+    body {
+        background-image: url(img/bg.jpg);
+         !important
+    }
 
+    body>.grid {
+        height: 100%;
+    }
+
+    .image {
+        margin-top: -100px;
+    }
+
+    .column {
+        max-width: 600px;
+    }
+
+</style>
 
 <body>
+    <div id="menuDesktop" class="ui inverted vertical masthead center aligned segment">
 
-  <div class="ui inverted vertical masthead center aligned segment">
+        <div class="ui inverted large top fixed hidden menu">
 
-    <div class="ui inverted large top fixed hidden menu">
-         
-         <a href=""><img src="logo/logobranca.png" width="400px" height="90px"></a>
-        
-        <div class="right item">
+            <a href="#"><img src="logo/logobranca.png" alt="logo bit banc" width="400px" height="90px"></a>
 
-          <a class="ui inverted button" href="index.html" id="home">
-            <i class="large home icon"></i>HOME</a>
-          
-          <div class="item"></div>
+            <div class="right item">
 
-          <a class="ui inverted button" href="login.html">ENTRAR </a>
+                <a class="ui inverted button" href="index.html" id="home">
+                    <i class="large home icon"></i>HOME</a>
+
+                <div class="item"></div>
+
+                <a class="ui inverted button" href="login.html">ENTRAR </a>
+            </div>
+
         </div>
-
-      </div>
     </div>
 
-    <!--Sidebar Menu-->
-    <div class="ui vertical inverted sidebar menu">
-        <a class="active item">Home</a><a class="item">Fóruns</a><a class="item">Votações</a><a class="item">Comunidade</a>
-        <a class="item cadastro">Entrar</a>
+    <div id="menuMobile" class="ui inverted menu">
+        <a class="item" id="btnSidebar"><i class="sidebar icon"></i></a>
+        <div class="right menu">
+            <a><img src="logo/logobranca.png" width="250px" height="60px"></a>
+        </div>
     </div>
 
-    <div id="centro" class="ui segment">
-            <img src="img/user.png" class="user">
-            <br><br><br>    
-        <form class="ui segment form">
+    <div id="sidebar" class="ui vertical inverted sidebar menu">
+        <a class="active item">Home</a>
+        <a class="item">Cadastrar</a>
+    </div>
 
-            <div class="field">
-                <div class="ui left icon input">
-                    <input type="text" placeholder="Nome Completo">
-                    <i class="ui user icon"></i>
-                </div>
+    <!-- código do venancio -->
+
+    <div id="form" class="ui container segment">
+        <img src="img/user.png" class="user">
+        <br>
+        <br>
+        <br>
+        <div class="ui middle aligned center aligned grid">
+
+            <div class="column">
+
+                <form class="ui large form" method="post" action="#">
+
+                    <div class="ui stacked segment">
+                        <div class="field">
+
+                            <label>Nome Completo</label>
+                            <input required type="text" name="nomeUser" placeholder="Nome">
+
+                        </div>
+                        <div class="two fields">
+                            <div class="field">
+                                <label>CPF</label>
+                                <input type="text" placeholder="CPF" name="cpf" />
+                            </div>
+                            <div class="field">
+                                <label>Data de Nascimento</label>
+                                <input type="date" name="dataNasc">
+                            </div>
+
+                        </div>
+                        <div class="field">
+                            <label>Senha</label>
+                            <input required type="password" name="senha" placeholder="Senha">
+                        </div>
+                        <div class="field">
+                            <label>Confirmar Senha</label>
+                            <input type="password" name="conSenha" placeholder="Confirmar Senha">
+                        </div>
+                        <div class="field">
+                            <input class="ui fluid large teal submit button" type="submit" value="Criar Conta">
+                        </div>
+                    </div>
+
+                    <div class="ui error message"></div>
+
+                </form>
+
             </div>
-
-            <div class="field">
-                <div class="ui left icon input">
-                    <input type="text" placeholder="Nome Completo">
-                    <i class="ui user icon"></i>
-
-                    <input type="text" placeholder="Nome Completo"> 
-
-                </div>
-            </div>
-
-            <div class="field">
-                <div class="ui left icon input">
-                    <input type="password" placeholder="Senha">
-                    <i class="ui lock icon"></i>
-                </div>
-            </div>
-           
- <div class="ui fluid large teal submit button">Criar Conta</div>
-        </form>
+        </div>
     </div>
-    
-    </div>
-
 </body>
+<script src="jquery-3.1.1.min.js"></script>
+<script src="semantic/semantic.min.js"></script>
+<script>
+    $("#btnSidebar").click(function () {
+        $("#sidebar").sidebar('toggle');
+    });
+</script>
 
 </html>
