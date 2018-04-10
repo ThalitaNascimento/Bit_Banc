@@ -1,0 +1,26 @@
+
+
+    #centro {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+
+    }
+   
+.user 
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+
+#home i{
+    margin-top: -8px; 
+}
